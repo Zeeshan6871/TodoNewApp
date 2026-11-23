@@ -48,8 +48,8 @@ export function TaskFormModal({ open, onClose, task, onSave, onPreviewAttachment
         task.reminderOffsetMinutes !== null && task.reminderOffsetMinutes !== undefined
           ? String(task.reminderOffsetMinutes)
           : task.dueDate
-          ? "0"
-          : "none"
+            ? "0"
+            : "none"
       );
       setAttachments(task.attachments || []);
     } else {
@@ -127,7 +127,7 @@ export function TaskFormModal({ open, onClose, task, onSave, onPreviewAttachment
           <DialogTitle>{isEditing ? "Edit Task" : "Create New Task"}</DialogTitle>
           <DialogDescription>
             {isEditing
-              ? "Update task details, attachments stored in MongoDB, and due reminder."
+              ? "Update task details, attachments stored in Cloud, and due reminder."
               : "Set up task metadata, attach images or PDFs, and configure due reminders."}
           </DialogDescription>
         </DialogHeader>
@@ -272,9 +272,9 @@ export function TaskFormModal({ open, onClose, task, onSave, onPreviewAttachment
             )}
           </div>
 
-          {/* Attachments Section (Images/PDFs directly into MongoDB) */}
+          {/* Attachments Section (Images/PDFs directly into Cloud) */}
           <div className="space-y-2 pt-2 border-t border-border">
-            <label className="text-xs font-semibold text-foreground">Attachments (MongoDB Direct Upload)</label>
+            <label className="text-xs font-semibold text-foreground">Attachments (Cloud Direct Upload)</label>
 
             {isEditing ? (
               <>
@@ -287,7 +287,7 @@ export function TaskFormModal({ open, onClose, task, onSave, onPreviewAttachment
               </>
             ) : (
               <p className="text-xs text-muted-foreground p-3 rounded-lg bg-muted/40 border border-border/60">
-                💡 Tip: Save this task first to upload and manage attachments directly into MongoDB.
+                💡 Tip: Save this task first to upload and manage attachments directly into Cloud.
               </p>
             )}
           </div>

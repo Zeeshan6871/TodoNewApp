@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { getDb, ObjectId } from "./mongodb.js";
+import { getDb, ObjectId } from "./Cloud.js";
 
 const SESSION_COOKIE_NAME = "session_token";
 const SESSION_EXPIRY_DAYS = 7;
@@ -25,7 +25,7 @@ export function verifyPassword(password, storedHash) {
 }
 
 /**
- * Creates a new session in MongoDB for the given user.
+ * Creates a new session in Cloud for the given user.
  */
 export async function createSession(userId) {
   const db = await getDb();

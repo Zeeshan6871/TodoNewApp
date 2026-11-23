@@ -136,7 +136,7 @@ export default function TodoDashboard() {
       const data = await res.json();
       if (data.success) {
         setTasks((prev) => prev.filter((t) => t.id !== taskId));
-        toast({ title: "Task deleted", description: "Task and MongoDB attachments removed" });
+        toast({ title: "Task deleted", description: "Task and attachments removed" });
       }
     } catch (err) {
       console.error("Delete task error:", err);
@@ -181,7 +181,6 @@ export default function TodoDashboard() {
             {/* Pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold shadow-sm">
               <Sparkles className="h-3.5 w-3.5" />
-              <span>Senior Developer Architecture • MongoDB Direct Storage</span>
             </div>
 
             {/* Hero Heading */}
@@ -190,7 +189,7 @@ export default function TodoDashboard() {
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Full-featured task lifecycle with image/PDF uploads directly stored in MongoDB, in-app Web Audio reminder chimes, and customizable views.
+              Full-featured task lifecycle with image/PDF uploads directly stored in Cloud, in-app Web Audio reminder chimes, and customizable views.
             </p>
 
             {/* CTAs */}
@@ -210,9 +209,9 @@ export default function TodoDashboard() {
                 <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
                   <Database className="h-5 w-5" />
                 </div>
-                <h3 className="font-bold text-sm text-foreground">MongoDB Direct Uploads</h3>
+                <h3 className="font-bold text-sm text-foreground">Cloud Direct Uploads</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Store images and PDFs directly into MongoDB with instant in-browser lightbox and PDF reader previews.
+                  Store images and PDFs directly into Cloud with instant in-browser lightbox and PDF reader previews.
                 </p>
               </div>
 

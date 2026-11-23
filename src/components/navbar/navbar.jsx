@@ -25,7 +25,7 @@ export function Navbar({ onNewTask }) {
                 Senior
               </span>
             </div>
-            <p className="text-[11px] text-muted-foreground hidden sm:block">MongoDB Direct • In-App Chime Reminders</p>
+            <p className="text-[11px] text-muted-foreground hidden sm:block">Cloud Direct • In-App Chime Reminders</p>
           </div>
         </div>
 

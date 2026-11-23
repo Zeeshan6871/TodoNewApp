@@ -62,7 +62,7 @@ export function AuthModal() {
           </div>
           <DialogDescription>
             {authMode === "login"
-              ? "Access your tasks, MongoDB attachments, and due reminders."
+              ? "Access your tasks, Cloud attachments, and due reminders."
               : "Start organizing with enterprise task management."}
           </DialogDescription>
         </DialogHeader>

@@ -54,7 +54,7 @@ export function MongoFileDropzone({ taskId, onUploadSuccess, disabled = false })
           onUploadSuccess(data.attachment);
         }
       } catch (err) {
-        setError(err.message || "Failed to upload file to MongoDB");
+        setError(err.message || "Failed to upload file to Cloud");
       } finally {
         setUploading(false);
       }
@@ -108,7 +108,7 @@ export function MongoFileDropzone({ taskId, onUploadSuccess, disabled = false })
           {uploading ? (
             <>
               <Loader2 className="h-8 w-8 text-primary animate-spin" />
-              <p className="text-xs font-medium text-foreground">Storing file into MongoDB...</p>
+              <p className="text-xs font-medium text-foreground">Storing file into Cloud...</p>
             </>
           ) : (
             <>

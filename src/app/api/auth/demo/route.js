@@ -36,7 +36,7 @@ export async function POST() {
         {
           userId: user._id,
           title: "Complete Q4 Product Roadmap & Architecture",
-          description: "Finalize system architecture diagrams, review MongoDB storage indexing, and verify shadcn UI tokens.",
+          description: "Finalize system architecture diagrams, review Cloud storage indexing, and verify shadcn UI tokens.",
           status: "IN_PROGRESS",
           priority: "URGENT",
           category: "Work",
@@ -67,7 +67,7 @@ export async function POST() {
         },
         {
           userId: user._id,
-          title: "Setup MongoDB Automated Backup & Health Checks",
+          title: "Setup Cloud Automated Backup & Health Checks",
           description: "Configure nightly dump schedule and health check endpoints.",
           status: "COMPLETED",
           priority: "MEDIUM",

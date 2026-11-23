@@ -26,7 +26,7 @@ export function ImageLightbox({ attachment, onClose }) {
       <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between z-10 bg-gradient-to-b from-black/80 to-transparent text-white">
         <div className="min-w-0 pr-4">
           <p className="text-sm font-medium truncate">{attachment.originalName}</p>
-          <p className="text-xs text-white/70">{formatFileSize(attachment.size)} • Stored in MongoDB</p>
+          <p className="text-xs text-white/70">{formatFileSize(attachment.size)} • Stored in Cloud</p>
         </div>
 
         {/* Controls */}

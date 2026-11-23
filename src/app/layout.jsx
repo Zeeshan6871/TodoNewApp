@@ -7,7 +7,7 @@ import { AuthModal } from "@/components/auth/auth-modal";
 export const metadata = {
   title: "TaskFlow | Senior Todo & Task Management App",
   description:
-    "Full-stack Todo application with MongoDB attachments, in-app due reminder chimes, and multi-view task management.",
+    "Full-stack Todo application with Cloud attachments, in-app due reminder chimes, and multi-view task management.",
 };
 
 export default function RootLayout({ children }) {

@@ -175,7 +175,7 @@ export function TaskCard({ task, onToggleStatus, onEdit, onDelete, onPreviewAtta
           <div
             className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-muted/80 hover:bg-muted text-foreground text-[11px] font-medium cursor-pointer transition-colors"
             onClick={() => onPreviewAttachment && onPreviewAttachment(task.attachments[0])}
-            title={`${task.attachments.length} attachment(s) in MongoDB`}
+            title={`${task.attachments.length} attachment(s) in Cloud`}
           >
             <Paperclip className="h-3 w-3 text-primary" />
             <span>{task.attachments.length}</span>
